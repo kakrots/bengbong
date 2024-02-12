@@ -1,0 +1,35 @@
+<html>
+<body>
+<div class="flex flex-col items-center justify-center h-screen -mt-16">
+            <img class="h-[200px]" src="https://media1.tenor.com/m/Ye7jK4dV19wAAAAC/goma-happy.gif">
+	    <img class="h-[200px]" src="https://media1.tenor.com/m/bBO6h42RPXQAAAAC/jerry-lick-jerry.gif">
+<h1> My BengBong >.< </h1>
+<p> Would you like to spend your Valentine's Day with Me(ryan:3)</p>
+<button id="yesButton">Yes</button>
+<button id="no">Nah uh uh</button>
+</div>
+
+<style>
+div{
+	text-align: center;
+	vertical-align: middle;
+}
+#no{
+position:absolute;
+}
+</style>
+<script>
+ document.getElementById("yesButton").addEventListener("click", function(){
+            alert("Yehey!! iloveyousomuch beng!!<3 hehe :3");
+        });
+var b = document.getElementById("no")
+b.addEventListener("click",change);
+function change()	{
+	var i = Math.floor(Math.random()*1000)+1
+	var j = Math.floor(Math.random()*700)+1
+	b.style.left = i+"px";
+	b.style.top = j+"px";
+}
+</script>
+</body>
+</html>
